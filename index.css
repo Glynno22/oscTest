@@ -1,0 +1,145 @@
+/* Reset et styles de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'sans-serif';
+}
+
+body {
+    background-color: #ead0d0e1;
+    color: #000;
+    line-height: 1.6;
+}
+
+.blocsection {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: -2px 1px 9px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+
+.blocsection1{
+    color: white;
+    background-color: #000 !important;
+}
+
+.contenantLogoOrange{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoOrange{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+.titreNom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+/* Formulaire */
+
+h2 {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-top: 15px;
+    color: #ff7a01;
+}
+
+.formmulaire {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.obligatoire{
+    color: red;
+    font-size: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline:#000 solid 2px;
+}
+
+.ajout {
+    background-color: #ff7a01;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.ajout:hover {
+    background-color: #e66a00;
+}
+
+/* Liste des employés */
+
+.TableDesEmployes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #ff7900;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.supprimer {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.supprimer:hover {
+    background-color: #d32f2f;
+}
+
+.aucunEmploye {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    display: none;
+}
+

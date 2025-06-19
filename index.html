@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Un titre bien descriptif-->
+    <section class="blocsection1 blocsection">
+        <div class="titreNom">
+            <h1> Annuaire des employés de Orange </h1>
+        </div>
+    </section>
+
+    <!-- La section d'un formulaire pour ajouter un employé -->
+    <section class="blocsection">
+            <div>
+                <div class="contenantLogoOrange">
+                    <img src="images/orange1.png" alt="Logo de Orange" class="logoOrange">
+                </div>
+
+                <h2>Ajouter un employé</h2>
+                <form id="formulaireGenerale" class="blocsection">
+                    <div class="formmulaire">
+                        <label for="nomE">Nom <span class="obligatoire">*</span></label>
+                        <input type="text" id="nomEmp" required>
+                    </div>
+                    <div class="formmulaire">
+                        <label for="prenomE">Prénom <span class="obligatoire">*</span></label>
+                        <input type="text" id="prenomEmp" required>
+                    </div>
+                    <div class="formmulaire">
+                        <label for="emailE">Email <span class="obligatoire">*</span></label>
+                        <input type="email" id="emailEmp" required>
+                    </div>
+                    <div class="formmulaire">
+                        <label for="fonctioE">Poste/Fonction <span class="obligatoire">*</span></label>
+                        <input type="text" id="fonctionEmp" required>
+                    </div>
+                    <button type="submit" class="ajout">Ajouter</button>
+                </form>
+            </div>
+    </section>
+
+    <!-- La section qui affiche la liste des employés ajoute plus haut -->
+    <section class="blocsection">
+        <div>
+            <h2>Liste des employes</h2>
+            <div id="">
+                <table id="TableDesEmployes" class="TableDesEmployes">
+                    <thead>
+                        <tr>
+                            <th>Nom complet</th>
+                            <th>Email</th>
+                            <th>Fonction</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listeEmploye">
+                        <!-- Espace reserver a l'affichage des employes que nous avons ajouter plus haut  -->
+                    </tbody>
+                </table>
+                <p id="pasEmployer" class="aucunEmploye">Aucun employe enregistre pour le moment</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
