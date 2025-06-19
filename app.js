@@ -118,11 +118,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function supprimer(id) {
         let employes = getLesEmployes();
         employes = employes.filter(employe => employe.id !== id);
-        localStorage.setItem('Les employes d\'orange', JSON.stringify(employes));
+        localStorage.setItem('orangeemployes', JSON.stringify(employes));
     }
     
     // Récupération des employés depuis le localStorage
     function getLesEmployes() {
-        return JSON.parse(localStorage.getItem('Les employes d\'orange ')) || [];
+        return JSON.parse(localStorage.getItem('orangeemployes')) || [];
     }
 });
