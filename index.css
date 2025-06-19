@@ -142,3 +142,48 @@ tr:hover {
     font-style: italic;
     display: none;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .TableDesEmployes {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tbody {
+        display: block;
+        width: 100%;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 2px solid #ff7900;
+        border-radius: 5px;
+        padding: 10px;
+        position: relative;
+    }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+        border: none;
+        border-bottom: 1px solid #eee;
+        text-align: right;
+    }
+
+    td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        text-align: left;
+        padding-right: 20px;
+        color: #ff7900;
+    }
+}
